@@ -1,0 +1,337 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Lato";
+    background-color: yellow;
+}
+
+.content {
+    margin: auto;
+    width: 90%;
+    max-width: 1600px;
+    display: grid;
+    grid-template-areas: "header header header"
+        /* "main main aside" */
+        "main main main"
+        "footer footer footer";
+}
+
+.header_principal {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.5);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    padding: 10px;
+    list-style: none;
+    text-align: left;
+}
+
+
+header nav {
+    min-height: 100px;
+    
+}
+
+.listado_opciones {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: math;
+    font-size: 24px;
+}
+
+main {
+    margin: 10px;
+    min-height: 100px;
+    grid-area: main;
+}
+
+main .titulo_main {
+    margin: 20px 0px;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main .card-container {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-content: center;
+    /* gap: 10px; */
+    text-align: center;
+    
+}
+
+main section {
+    flex-grow: 1;
+    color: white;
+    background-color: black;
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    width: 30%;
+    min-height: 300px;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+main section:hover {
+    transform: scale(1.05);
+    
+}
+
+main section header {
+    font-family: 'Righteous', bold;
+    font-weight: bolder;
+    font-size: 3.5rem;
+    min-height: 80px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+main section p.antes {
+    font-size: 1.2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    min-height: 50px;
+    padding-top: 20px;
+    text-decoration: line-through;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+}
+
+main section p::before {
+    content: "";
+    min-width: 20px;
+    border-top: 1px red solid;
+    transform: rotate(-14deg);
+}
+
+main section p.ahora {
+    font-family: 'Righteous', cursive;
+    font-size: 3rem;
+    min-height: 80px;
+    padding-bottom: 25px;
+}
+
+main section p.ahora::after {
+    position: absolute;
+    top: 470px;
+    content: " / mes";
+    color: grey;
+    font-size: 1.3rem;
+}
+
+article.section ul {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    /* background-color: blue; */
+    padding: 0px 0px 15px 10px;
+    min-height: 200px;
+}
+
+article.section ul li {
+    padding: 4px;
+}
+
+article.section ul li:hover {
+    transform: scale(1.05);
+}
+
+article.section ul li img {
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+.titulo {
+    font-family: math;
+    font-size: 46px;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+/* Puede usarse para corregir el desplazamiento de /mes en el :hover */
+/* .peque {
+    color: grey;
+    font-size: 1.3rem;
+} */
+
+.muypeque {
+    color: rgb(133, 133, 133);
+    font-size: .8rem;
+}
+
+.section .boton {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    display: inline-block;
+    color: rgb(48, 48, 48);
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(255, 255, 0, 0.856);
+    border: yellow 2px solid;
+    margin: 10px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    transition: all .2s ease;
+}
+
+.section .boton:hover {
+    background-color: rgb(68, 67, 67);
+    color: rgb(226, 226, 240);
+    transform: scale(1.2);
+}
+
+.aside {
+    display: none;
+    border: 5px rgb(226, 34, 185) solid;
+    grid-area: aside;
+}
+
+.aside aside {
+    border: 5px pink solid;
+    min-height: 100px;
+}
+
+nav.nav360 {
+    display: none;
+}
+
+.simbolomenu {
+    border: 5px blue solid;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+.footer {
+    min-height: 50px;
+    width: 90%;
+    grid-area: footer;
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.5);
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin: 5px;
+}
+
+footer li a img {
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        width: 100%;
+        /* grid-template-columns: 1fr; */
+    }
+    
+    main,
+    .aside {
+        grid-column: span 2;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+    
+    nav.nav360 {
+        display: flex;
+    }
+
+    nav.nav360>ul>ul {
+        display: none;
+    }
+
+    /* nav.nav360 li:not(:first-of-type):hover{
+        display: flex;
+    } */
+    nav.nav360 ul:hover>ul,
+    nav.nav360 ul:active>ul {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        background-color: aqua;
+        z-index: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+
+    nav.nav360 ul {
+        flex-direction: column;
+    }
+
+    .header .nav600 {
+        display: none;
+    }
+
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .header .nav600 {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .header .nav600 {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 1200px) {}
+
+@media only screen and (min-height: 900px) {
+    .footer {
+        position: fixed;
+        bottom: 0px;
+        left: auto;
+    }
+}

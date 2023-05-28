@@ -1,0 +1,107 @@
+body {
+    background-color: yellow;
+}
+
+.header_principal {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.5);
+}
+
+.titulo{
+    font-family: math;
+    font-size: 46px;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.listado_opciones {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: math;
+    font-size: 24px;
+}
+
+.titulo_seccion_principal{
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    font-size: 36px;
+}
+
+.texto_seccion_principal{
+    padding: 5px;
+    font-family: system-ui;
+    font-style: revert;
+}
+    
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+.foto_gym{
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.5);
+}
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.seccion_secundaria{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    font-family: system-ui;
+    font-style: revert;
+}
+
+.listado_seccion_secundaria{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+nav li a:hover {
+    background-color: #111;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.5);
+}
+
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+    margin: 5px;
+}
+
+footer li a img {
+    width: 30px;
+    height: 30px;
+    color: white;
+}
